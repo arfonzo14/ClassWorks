@@ -58,8 +58,7 @@ namespace ExamenLiebre
             Thread dorm = new Thread(dormir);
             int rand;
             int ranSleep;
-            dorm.Start();
-            dorm.IsBackground = true;
+           
             while (carrera)
             {
                 rand = ransom.Next(101);
@@ -84,6 +83,10 @@ namespace ExamenLiebre
                         {
                             Console.WriteLine("Liebre está durmiendo");
                             Thread.Sleep(ranSleep);
+                            dorm.Start();
+                            dorm.IsBackground = true;
+                            Monitor.Wait(l);
+  
                         }
 
                         if (pasoLiebre >= 25)
