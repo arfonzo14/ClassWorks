@@ -1,0 +1,7 @@
+C:\Users\arfon\source\repos\ExamenLiebre\ExamenLiebre\bin\Debug\ExamenLiebre.exe.config
+C:\Users\arfon\source\repos\ExamenLiebre\ExamenLiebre\bin\Debug\ExamenLiebre.exe
+C:\Users\arfon\source\repos\ExamenLiebre\ExamenLiebre\bin\Debug\ExamenLiebre.pdb
+C:\Users\arfon\source\repos\ExamenLiebre\ExamenLiebre\obj\Debug\ExamenLiebre.csprojAssemblyReference.cache
+C:\Users\arfon\source\repos\ExamenLiebre\ExamenLiebre\obj\Debug\ExamenLiebre.csproj.CoreCompileInputs.cache
+C:\Users\arfon\source\repos\ExamenLiebre\ExamenLiebre\obj\Debug\ExamenLiebre.exe
+C:\Users\arfon\source\repos\ExamenLiebre\ExamenLiebre\obj\Debug\ExamenLiebre.pdb
