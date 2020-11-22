@@ -55,7 +55,7 @@ namespace ExamenLiebre
         static void correLiebre()
         {
             Thread.CurrentThread.Name = "liebre";
-            Thread dorm = new Thread(dormir);
+           
             int rand;
             int ranSleep;
            
@@ -81,12 +81,12 @@ namespace ExamenLiebre
 
                         if (rand <= 60)
                         {
+                            Thread dorm = new Thread(dormir);
                             Console.WriteLine("Liebre está durmiendo");
                             Thread.Sleep(ranSleep);
                             dorm.Start();
                             dorm.IsBackground = true;
-                            Monitor.Wait(l);
-  
+                            Monitor.Wait(l);                           
                         }
 
                         if (pasoLiebre >= 25)
@@ -94,11 +94,6 @@ namespace ExamenLiebre
                             pasoLiebre = 25;
                             carrera = false;
                             ganoTort = false;
-                        }
-
-                        if (pasoLiebre < 25)
-                        {
-                            Monitor.Wait(l);
                         }
                     }
                 }
@@ -113,6 +108,7 @@ namespace ExamenLiebre
 
             lock (l)
             {
+                Console.WriteLine("Se despierta por dormir");
                 Monitor.Pulse(l);
             }
         }
